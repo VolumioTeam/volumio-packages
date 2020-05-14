@@ -1,0 +1,33 @@
+CATALOG 1234567890123
+CDTEXTFILE "my cdtext.cdt"
+TITLE "The best album"
+PERFORMER "Famous singer"
+SONGWRITER "Famous songwriter"
+FILE "File 01.flac" WAVE
+  TRACK 01 AUDIO
+    TITLE "Track one"
+    PERFORMER Singer
+    SONGWRITER Songwriter
+    ISRC AAAAA1234567
+    FLAGS 4CH PRE
+    INDEX 01 00:00:00
+  TRACK 02 AUDIO
+    TITLE "Track two"
+    PERFORMER Singer
+    SONGWRITER Songwriter
+    PREGAP 00:02:00
+    ISRC AAAAA1234567
+    INDEX 01 02:00:00
+    POSTGAP 00:02:00
+FILE File02.flac MP3
+  TRACK 03 AUDIO
+    TITLE "Track three"
+    PERFORMER Singer
+    SONGWRITER Songwriter
+    ISRC AAAAA1234567
+    INDEX 00 00:00:00
+    INDEX 01 00:04:12
+  TRACK 04 AUDIO
+    TITLE "Track four"
+    PERFORMER "Singer four"
+    INDEX 01 03:32:00

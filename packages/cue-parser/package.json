@@ -1,0 +1,44 @@
+{
+  "name": "@volumio/cue-parser",
+  "version": "0.0.0",
+  "description": "A library to parse .cue files",
+  "main": "dist/commonjs/index.js",
+  "types": "dist/commonjs/index.d.ts",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist/commonjs",
+    "dist/esm",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "clean": "npx rimraf ./dist",
+    "compile": "tsc -b tsconfig.json && tsc -b tsconfig.esm.json",
+    "test": "jest"
+  },
+  "peerDependencies": {
+    "fp-ts": "^2.5.4"
+  },
+  "devDependencies": {
+    "fp-ts": "^2.5.4",
+    "jest": "^25.5.4",
+    "typescript": "^3.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Giacomo Triggiano <giacomotriggiano@gmail.com>",
+  "homepage": "https://github.com/VolumioTeam/volumio-packages/packages/cue-parser#README",
+  "license": "MIT",
+  "keywords": [
+    "music",
+    "CUE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VolumioTeam/volumio-packages.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VolumioTeam/volumio-packages/issues"
+  }
+}
