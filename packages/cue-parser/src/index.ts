@@ -3,7 +3,8 @@ import fs from 'fs'
 import { promisify } from 'util'
 
 import { CueSheet, parse, ParseError } from './core'
-import { getBufferEncoding } from './getBufferEncoding'
+
+import { getBufferEncoding } from './getBufferEncoding' // Introduce linting problem
 
 export { CueSheet, parse, ParseError, stringify } from './core'
 
