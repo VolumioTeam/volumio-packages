@@ -12,7 +12,8 @@
     "publish": "lerna publish",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "test:linting": "eslint --ext .js,.jsx,.ts,.tsx ."
+    "test:linting": "eslint --ext .js,.jsx,.ts,.tsx .",
+    "test:linting:ci": "eslint --ext .js,.jsx,.ts,.tsx --format github ."
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
@@ -26,6 +27,7 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-config-standard": "^14.1.1",
+    "eslint-formatter-github": "^1.0.11",
     "eslint-plugin-eslint-comments": "^3.1.2",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-node": "^11.1.0",
