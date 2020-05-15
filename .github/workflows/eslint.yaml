@@ -9,6 +9,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          fetch-depth: 2 # This is necessary for npm:create-checkes used by npm:lint-formatter-github
       - uses: actions/setup-node@v1
         with:
           node-version: 12.x
